@@ -1,12 +1,10 @@
-name: testing CI
+name: test CI
 on: 
-  push
-
+  push:
 jobs:
   build:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-  - name: checkout
-    uses: actions/checkout@v4
-
+    steps:
+    - name: check repo
+      uses: actions/checkout@v4
